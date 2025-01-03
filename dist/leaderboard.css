@@ -1,0 +1,185 @@
+* {
+    padding:0px;
+    margin:0px;
+}
+body{
+    background-color: lightgreen;
+    font-family: Quicksand, sans-serif;
+    padding:0;
+    margin:0;
+}
+#logo{
+    width:50px;
+    height:50px;
+    border-radius: 8px;
+    background-color: darkgreen;
+}
+table {
+    width: 70vw;
+    border-collapse: collapse;
+    margin: auto;
+  }
+  #tab{
+    border: 1px solid black;
+    border-radius: 40px;
+    width:70vw;
+    margin: 15vh 0;
+    padding:8vh 0;
+  }
+  #loader {
+    display: none;
+    position: absolute;
+    top:50vh;
+    left:50vw;
+  width: 45px;
+  aspect-ratio: 1;
+  --c: no-repeat linear-gradient(#000 0 0);
+  background:
+    var(--c) 0%   50%,
+    var(--c) 50%  50%,
+    var(--c) 100% 50%;
+  background-size: 20% 100%;
+  animation: l1 1s infinite linear;
+}
+@keyframes l1 {
+  0%  {background-size: 20% 100%,20% 100%,20% 100%}
+  33% {background-size: 20% 10% ,20% 100%,20% 100%}
+  50% {background-size: 20% 100%,20% 10% ,20% 100%}
+  66% {background-size: 20% 100%,20% 100%,20% 10% }
+  100%{background-size: 20% 100%,20% 100%,20% 100%}
+}
+#loaderback{
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+    opacity:0.5;
+}
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+  th{
+    margin-bottom: 20px;
+  }
+  tr._1{
+    color:gold;
+    font-weight: bold;
+}
+tr._2{
+    color:silver;
+    font-weight: bold;
+  }
+  tr._3{
+    color:#cd7f32;
+    font-weight: bold;
+  }
+nav{
+    background-color: darkgreen;
+    display: flex;
+    flex-wrap: wrap;
+    height:auto;
+    width: 80%;
+    padding:18px;
+    justify-content: space-between;
+    border-radius: 30px;
+    align-items: center;
+    margin:20px auto;
+    position:sticky;
+    top:18px;
+}
+#back{
+    background-color: darkgreen;
+    border:none;
+    font-weight: bold;
+    padding:0 0.7812vw;
+    transition: all 0.25s;
+}
+#back:hover{
+    color:orange;
+    cursor: pointer;
+    transform: translate(0px,-1px);
+}
+main{
+    background-color: white;
+    width:90%;
+    margin:1.389vh auto;
+    padding:1.736vh 0.9765vw;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:auto;
+    /* background-color: #f6f6f6; */
+}
+#main{
+    font-weight: bolder;
+    font-size: 50px;
+    font-family: Rubik, sans-serif;
+    letter-spacing: -1px;
+    color:blue;
+}
+@media screen and (max-width: 760px)
+{
+    #main{
+        font-weight: bolder;
+        font-size: 25px;
+        font-family: Rubik, sans-serif;
+        letter-spacing: -1px;
+        color:blue;
+    }
+
+}
+@media screen and (max-width: 760px)
+{
+    #main{
+        font-weight: bolder;
+        font-size: 25px;
+        font-family: Rubik, sans-serif;
+        letter-spacing: -1px;
+        color:blue;
+    }
+}
+footer{
+    background-color: black;
+    height: auto;
+    padding-left:3%;
+    padding-bottom: 1%;
+    margin-top:5%;
+    padding-top:1%;
+}
+#Cyberlabs{
+    color:white;
+    width:auto;
+    height:auto;
+}
+#cl{
+    padding:2%;
+    font-weight: bold;
+    font-size: x-large;
+    color: white;
+    
+}
+#name{
+    font-size: large;
+    padding-top:3%;
+    color: white;
+}
+#mail{
+    font-size: medium;
+    padding-bottom: 3%;
+    color: white;
+}
+#last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#Cyberlabs{
+    height:70px;
+    width:70px;
+}

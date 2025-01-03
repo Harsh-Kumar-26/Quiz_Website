@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div id="loaderback"></div>
+    <div id="loader"></div>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: lightgreen;
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 5px 10vw;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            height: 10vh;
+            box-shadow: 0px 0px 2px 2px gray;
+            position: sticky;
+            top: 0px;
+            gap: 20px;
+        }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style-type: none;
+        }
+        ul li {
+            padding-right: 40px;
+            display: inline-block;
+            font-weight: bold;
+            background-color: white;
+            transition: all 0.2s;
+        }
+        li:hover {
+            color: orange;
+            cursor: pointer;
+        }
+        @media screen and (max-width: 760px) {
+            ul li {
+                padding-right: 10px;
+                font-size: xx-small;
+            }
+        }
+        main {
+            background-color: white;
+            width: 90%;
+            margin: 1.389vh auto;
+            padding: 1.736vh 0.9765vw;
+            border-radius: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+        }
+        footer {
+            background-color: black;
+            height: auto;
+            padding-left: 3%;
+            padding-bottom: 1%;
+            padding-top: 1%;
+            position: relative;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        #Cyberlabs {
+            color: white;
+            width: auto;
+            height: auto;
+        }
+        #cl {
+            padding: 2%;
+            font-weight: bold;
+            font-size: x-large;
+            color: white;
+        }
+        #name {
+            font-size: large;
+            padding-top: 3%;
+            color: white;
+        }
+        #mail {
+            font-size: medium;
+            padding-bottom: 3%;
+            color: white;
+        }
+        #last {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        #Cyberlabs {
+            height: 70px;
+            width: 70px;
+        }
+        #logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 8px;
+            background-color: darkgreen;
+        }
+        #logo:hover {
+            cursor: pointer;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz History</title>
+    <link rel="stylesheet" href="user_custom_quiz_his.css">
+    <script src="bundle.js" defer></script>
+</head>
+<body>
+    <nav id="n">
+        <img id='logo' alt="Server Error">
+        <h2>Custom Quiz History</h2>
+        <ul>
+            <li id="back">Back</li>
+            <li id="logout">Logout</li>
+        </ul>
+    </nav>
+    <main id="m">
+        <div id="quizhistory"></div>
+    </main>
+    <footer>
+        <img id="Cyberlabs" alt="Server Error">
+        <span id="cl">CyberLabs</span>
+        <h2 id="name">Harsh Kumar</h2>
+        <h4 id="mail">harshkumar010377@gmail.com</h4>
+        <div id="last">
+            <p>@All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+<script>
+    document.getElementById("back").addEventListener("click", function() {
+        // window.location.href = "user_main.html";
+        window.history.back();
+    });
+</script>
+</html>

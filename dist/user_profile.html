@@ -1,0 +1,56 @@
+<!-- Add delete your profile option also -->
+<!DOCTYPE html>
+<html lang="en">
+    <div id="loaderback"></div>
+    <div id="loader"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User_Profile</title>
+    <link href="user_profile.css" rel="stylesheet">
+    <script src="bundle.js" defer></script>
+    <script src="https://widget.cloudinary.com/v2.0/global/all.js"></script>
+</head>
+<body>
+    <nav>
+        <div>
+            <h1 id="user_profile">User Profile</h1>
+        </div>
+        <buttons>
+            <button id="back">Back</button>
+            <button id="logout">Logout</button>
+        </buttons>
+    </nav>
+    <main id="m">
+        <img id="profile_pic" alt="Server Error">
+        <button id="upload">Upload Your Profile Picture</button>
+        <div id="data">
+            <div id="named"><h2>Name:</h2><span></span></div>
+            <div id="email"><p>Email:</p><span></span></div>
+        </div>
+        <div id="at">
+            <div id="attempt"></div>
+        </div>
+        <div id="buto"><button id="bt1">Reset Password</button><button id="bt2">Delete Account</button></div>
+      <div id="h"><div id="history">Quiz History</div></div>
+    </main>
+    <footer>
+        <img id="Cyberlabs" alt="Server Error">
+        <span id="cl">CyberLabs</span>
+        <h2 id="name">Harsh Kumar</h2>
+        <h4 id="mail">harshkumar010377@gmail.com</h4>
+        <n id="last">
+        <p>@All Rights Reserved</p>
+    </n>
+    </footer>
+</body>
+<script>
+    document.getElementById("back").addEventListener("click",()=>{
+        // window.location.href="user_main.html";
+        window.history.back();
+    })
+    document.getElementById("history").addEventListener("click",()=>{
+        window.location.href='history.html';
+    })
+</script>
+</html> 

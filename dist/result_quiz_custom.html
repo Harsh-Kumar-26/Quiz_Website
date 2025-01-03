@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div id="loaderback"></div>
+    <div id="loader"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Quiz Result</title>
+    <link rel="stylesheet" href="quiz_result.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="bundle.js" defer></script>
+</head>
+<body>
+    <nav id="n">
+            <img id='logo' alt="Server Error">
+        <ul>
+                <li id="1">Home</li>
+                <li id="2">My Account</li>
+            </ul>
+    </nav>
+    <main id="m2">
+        <h1 id="main">Quiz Name</h1>
+        <div id="quizdata"><div id="quiz">Quiz Data</div><div id="sec">Section Data</div></div>
+        <div id="attemptdata"><div id="marks"><div id="mark">234</div><div id="max"></div></div><div id="attempt"><div id="pos">14</div><div id="neg">8</div><div id="ua">9</div></div></div>
+        <!-- <div id="bar"><canvas id="myChart3" style="width:30vw;"></canvas></div> -->
+        <div id="acct"><div id="acc">accuracy</div><div id="time">Percent</div></div>
+        <div id="section">Sectionwise Results</div>
+        <div id="sec_data"></div>
+        <div id="chart">
+            <div class="chart">
+            <canvas id="myChart" style="width:30vw;"></canvas>
+        </div>
+        <div class="chart">
+            <canvas id="myChart2" style="width:30vw;"></canvas>
+        </div>
+        </div>
+        <button id="ques">View Answers</button>
+    </main>
+    <footer>
+        <img id="Cyberlabs" alt="Server Error">
+        <span id="cl">CyberLabs</span>
+        <h2 id="name">Harsh Kumar</h2>
+        <h4 id="mail">harshkumar010377@gmail.com</h4>
+        <n id="last">
+        <p>@All Rights Reserved</p>
+    </n>
+    </footer>
+</body>
+<script>
+    document.getElementById("1").addEventListener("click", function() {
+    window.location.href = "user_main.html";})
+    document.getElementById("2").addEventListener("click", function() {
+    window.location.href = "user_profile.html";})
+</script>
+</html>

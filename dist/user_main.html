@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div id="loaderback"></div>
+    <div id="loader"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user_mainpage</title>
+    <link rel="stylesheet" href="user_main.css">
+    <script src="bundle.js"></script>
+</head>
+<body>
+    <nav id="n">
+            <img id='logo' alt="Server Error">
+        <ul>
+                <li id="1">Home</li>
+                <li id="2">Quiz History</li>
+                <li id="3">Community</li>
+                <li id="4">My Account</li>
+            </ul>
+    </nav>
+    <main id="m">
+        <div id="main"></div>
+        <div id="createquiz">Create Your Own Quiz</div>
+        <div id="custom">Your Custom Quizzes</div>
+        <div id="live">Live Quizzes</div>
+        <div id="history">Quiz History</div>
+               
+    </main>
+    <footer>
+        <img id="Cyberlabs" alt="Server Error">
+        <span id="cl">CyberLabs</span>
+        <h2 id="name">Harsh Kumar</h2>
+        <h4 id="mail">harshkumar010377@gmail.com</h4>
+        <n id="last">
+        <p>@All Rights Reserved</p>
+    </n>
+    </footer>
+</body>
+<script>
+    const sub="all";
+    const sort="select";
+    document.getElementById("1").addEventListener("click", function() {
+    window.location.href = "user_main.html";})
+    document.getElementById("createquiz").addEventListener("click", function() {
+        window.location.href = "quiz_make_page_user.html";})
+    document.getElementById("2").addEventListener("click", function() {
+    window.location.href = "history.html";})
+    document.getElementById("3").addEventListener("click", function() {
+        window.location.href=`community.html?sub=${encodeURIComponent(sub)}&sort=${encodeURIComponent(sort)}`;
+;})
+    document.getElementById("4").addEventListener("click", function() {
+    window.location.href = "user_profile.html";})
+    document.getElementById("custom").addEventListener("click", function() {
+    window.location.href = "user_custom_quiz_his.html";})
+    document.getElementById("live").addEventListener("click", function() {
+        window.location.href=`community.html?sub=${encodeURIComponent(sub)}&sort=${encodeURIComponent(sort)}`;
+;})
+    document.getElementById("history").addEventListener("click", function() {
+    window.location.href = "history.html";})
+    document.getElementById("logo").addEventListener("click",()=>{
+    window.location.href="user_main.html";
+    });
+</script>
+</html>

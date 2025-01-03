@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div id="loaderback"></div>
+    <div id="loader"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Main</title>
+    <link rel="stylesheet" href="quiz_main.css">
+    <script src="bundle.js" defer></script>
+</head>
+<body>
+    <nav id="n">
+        <img id='logo' alt="Server Error">
+        <h2>Quiz Details</h2>
+        <ul>
+            <li id="back">Back</li>
+            <!-- <li id="logout">Logout</li> -->
+        </ul>
+    </nav>
+    <main id="m">
+        <div id="container"></div>
+        <div id="data2">
+        <div id="seca">Sectionwise data</div><br><br>
+        <div id="sectiondata"></div>
+        <div id="seca">Quiz Rules and Instructions</div><br>
+        <div id="ins">
+            <ul id="ins2">
+                <li>The Timer starts as soon as START QUIZ button is pressed<br><br></li>
+                <li>Quiz automatically ends as soon as timer comes to end<br><br></li>
+                <li>Positive and negative mark for each question is given at top right corner<br><br></li>
+                <li>Each question has a unique correct option<br><br></li>  
+                <li>Once the quiz is submitted, the result will be shown<br><br></li>
+                <li>For any query, contact the quiz admin<br><br></li>
+             </ul>
+         </div>
+    </div>
+    <div id="space"><button id="sq">START QUIZ</button></div>
+    </main>
+    <footer>
+        <img id="Cyberlabs" alt="Server Error">
+        <span id="cl">CyberLabs</span>
+        <h2 id="name">Harsh Kumar</h2>
+        <h4 id="mail">harshkumar010377@gmail.com</h4>
+        <div id="last">
+            <p>@All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+<script>
+    document.getElementById("back").addEventListener("click", function() {
+        // window.location.href = "community.html";
+        window.history.back();
+    });
+</script>
+</html>

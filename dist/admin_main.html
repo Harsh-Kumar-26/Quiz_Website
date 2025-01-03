@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div id="loaderback"></div>
+    <div id="loader"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin_main</title>
+    <link href="admin_main.css" rel="stylesheet">
+    <script src="bundle.js" defer></script>
+</head>
+<body>
+    <nav>
+        <img id="logo" alt="Server Error">
+        <buttons>
+            <button id="logoutadm">Logout</button>
+        </buttons>
+    </buttons>
+    </nav>
+    <main id="m">
+        <div id="main">Welcome Admin</div>
+        <div id="createquiz">Create New Quiz</div>
+        <h2 id="squizhistory">Quiz History</h2>
+        <div id="quizhistory"></div>
+    </main>
+    <footer>
+        <img id="Cyberlabs" alt="Server Error">
+        <span id="cl">CyberLabs</span>
+        <h2 id="name">Harsh Kumar</h2>
+        <h4 id="mail">harshkumar010377@gmail.com</h4>
+        <n id="last">
+        <p>@All Rights Reserved</p>
+    </n>
+    </footer>
+</body>
+<script>
+    const logout=document.getElementById("logoutadm");
+    logout.addEventListener("click",()=>{
+        if(confirm("Are you sure you want to LOGOUT?"))
+        {
+            alert("Admin LOGOUT");
+            window.location.href=`index.html`;
+        }
+    })
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get('id');
+    console.log(id);
+    document.getElementById("createquiz").addEventListener("click",()=>
+    {
+        window.location.href=`quiz_make_page.html?id=${encodeURIComponent(id)}`;
+    });
+    document.getElementById("logo").addEventListener("click",()=>{
+    window.location.href=`admin_main.html?id=${encodeURIComponent(id)}`;
+    });
+</script>
+</html> 

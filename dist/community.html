@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div id="loaderback"></div>
+    <div id="loader"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community-Quizzeria</title>
+    <link rel="stylesheet" href="community.css">
+    <script src="bundle.js" defer></script>
+</head>
+<body>
+    <nav id="n">
+        <p id="back" style="font-weight: bold;transition: all 0.2s;">Back</p>
+        <ul>
+            <li id="1">Quiz History</li>
+            <li id="2">My Account</li>
+            <li id="3"><button id="logout">Logout</button></li>
+        </ul>
+    </nav>
+    <main id="m">
+        <div id="main">Live Quiz</div><br>
+                <div id="filters">
+                    <select id="subs">
+                        <option value="all">All Topics</option>
+                        <option value="history">History</option>
+                        <option value="science">Science</option>
+                        <option value="maths">Mathematics</option>
+                        <option value="gk">General Knowledge</option>
+                        <option value="comp">Computer</option>
+                        <option value="others">Others</option>
+                    </select>
+                    <select id="sort">
+                        <option value="select">Sort</option>
+                        <option value="Upvote">Highest Upvote</option>
+                        <option value="attempt">Most Popular</option>
+                    </select> 
+                </div>
+                <br><br>
+        <div id="container"></div>
+        <div id="valued">Loading this page may take time</div>
+    </main>
+    <footer>
+        <img id="Cyberlabs" alt="Server Error">
+        <span id="cl">CyberLabs</span>
+        <h2 id="name">Harsh Kumar</h2>
+        <h4 id="mail">harshkumar010377@gmail.com</h4>
+        <n id="last">
+            <p>@All Rights Reserved</p>
+        </n>
+    </footer>
+</body>
+<script>
+    document.getElementById("1").addEventListener("click", function() {
+        window.location.href = "history.html";})
+        document.getElementById("2").addEventListener("click", function() {
+            window.location.href = "user_profile.html";})
+            document.getElementById("back").addEventListener("click", function() {
+                window.location.href = "user_main.html";
+            });
+        </script>
+</html>

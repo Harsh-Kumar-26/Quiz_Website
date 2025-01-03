@@ -1,0 +1,193 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: lightgreen;
+}
+#container{
+    padding-bottom: 40px;
+}
+#seca{
+    font-size: x-large;
+}
+#ins{
+    width:65vw;
+}
+#sq{
+    padding:15px 25px;
+    border-radius: 40px;
+    border: none;
+    font-weight: bolder;
+    font-size: larger;
+    background-color: lightgreen;
+    transition: all 0.2s;
+}
+#sq:hover{
+    background-color: darkgreen;
+    color: white;
+    cursor: pointer;
+}
+#space{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height:60vh;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 10vw;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    height: 10vh;
+    box-shadow: 0px 0px 2px 2px gray;
+    position: sticky;
+    top: 0px;
+    gap: 20px;
+}
+#back{
+    padding-right: 40px;
+    display: inline-block;
+    font-weight: bold;
+    background-color: white;
+    transition: all 0.2s;
+}
+#back:hover {
+    color: orange;
+    cursor: pointer;
+}
+@media screen and (max-width: 760px) {
+    ul li {
+        padding-right: 10px;
+        font-size: xx-small;
+    }
+}
+main {
+    background-color: white;
+    width: 90%;
+    min-height: 70vh;
+    margin: 1.389vh auto;
+    padding: 1.736vh 0.9765vw;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.section-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: gray;
+}
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap:70px;
+}
+#data{
+    width:65vw;
+    /* gap:40px; */
+}
+.data{
+    font-size: large;
+    color:gray;
+    padding:2px 0;
+}
+#namequiz {
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 1.736vh 0.9765vw;
+}
+footer {
+    background-color: black;
+    height: auto;
+    padding-left: 3%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#Cyberlabs {
+    color: white;
+    width: auto;
+    height: auto;
+}
+#cl {
+    padding: 2%;
+    font-weight: bold;
+    font-size: x-large;
+    color: white;
+}
+#name {
+    font-size: large;
+    padding-top: 3%;
+    color: white;
+}
+#mail {
+    font-size: medium;
+    padding-bottom: 3%;
+    color: white;
+}
+#loader {
+    display: none;
+    position: absolute;
+    top:50vh;
+    left:50vw;
+  width: 45px;
+  aspect-ratio: 1;
+  --c: no-repeat linear-gradient(#000 0 0);
+  background:
+    var(--c) 0%   50%,
+    var(--c) 50%  50%,
+    var(--c) 100% 50%;
+  background-size: 20% 100%;
+  animation: l1 1s infinite linear;
+}
+@keyframes l1 {
+  0%  {background-size: 20% 100%,20% 100%,20% 100%}
+  33% {background-size: 20% 10% ,20% 100%,20% 100%}
+  50% {background-size: 20% 100%,20% 10% ,20% 100%}
+  66% {background-size: 20% 100%,20% 100%,20% 10% }
+  100%{background-size: 20% 100%,20% 100%,20% 100%}
+}
+#loaderback{
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+    opacity:0.5;
+}
+#last {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#Cyberlabs {
+    height: 70px;
+    width: 70px;
+}
+#logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: darkgreen;
+}

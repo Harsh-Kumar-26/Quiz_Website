@@ -1,0 +1,249 @@
+* {
+    padding:0;
+    margin:0;
+    /* background-color: lightgreen; */
+}
+body{
+    background-color: lightgreen;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    padding:5px 10vw;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    height:10vh;
+    box-shadow: 0px 0px 2px 2px gray;
+    position: sticky;
+    top:0px;
+    gap:20px;
+    position:sticky;
+    top:0;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    
+}
+ul li{
+    padding-right: 40px;
+    display: inline-block;
+    font-weight: bold;
+    background-color: white;
+    transition: all 0.2s;
+}
+li:hover{
+    color:orange;
+    cursor:pointer;
+}
+@media screen and (max-width:760px){
+    ul li{
+        padding-right:10px;
+        font-size: xx-small;
+    }
+}
+main{
+    background-color: white;
+    width:70%;
+    margin:1.389vh auto;
+    padding:1.736vh 0.9765vw;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height:auto;
+    /* background-color: #f6f6f6; */
+    min-height:47vh;
+}
+#filters{
+    position: sticky;
+    top:13vh;
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.section-container{
+    background-color: bisque;
+    border-radius: 40px;
+    height:15vh;
+    width:68vw;
+    margin: 25px 0;
+    padding:10px;
+    text-align:center;
+   font-weight: bold;
+   font-size: xx-large;
+   padding-top:7.5vh;
+   transition: all 0.5s;
+   display: flex;
+   flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.data{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    width:60vw;
+    color: gray;
+    font-size: medium;
+}
+.section-container:hover{
+    box-shadow: 0 0 4px 0 #7d7c83;
+    cursor: pointer;
+    transform: translate(0px,-1px);
+    color:blue;
+}
+select{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin-right: 10px;
+    background-color: #f6f6f6;
+    width:auto;
+}
+select:hover{
+    cursor: pointer;
+}
+#main{
+    font-weight: bolder;
+    font-size: 50px;
+    font-family: Rubik, sans-serif;
+    letter-spacing: -1px;
+    color:blue;
+}
+#valued{
+    font-size: large;
+    color: gray;
+}
+@media screen and (max-width: 760px)
+{
+    #main{
+        font-weight: bolder;
+        font-size: 25px;
+        font-family: Rubik, sans-serif;
+        letter-spacing: -1px;
+        color:blue;
+    }
+
+}
+@media screen and (max-width: 760px)
+{
+    #main{
+        font-weight: bolder;
+        font-size: 25px;
+        font-family: Rubik, sans-serif;
+        letter-spacing: -1px;
+        color:blue;
+    }
+    #createquiz{
+        font-size: large;
+    }
+
+}
+#filter{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+#loader {
+    display: none;
+    position: absolute;
+    top:50vh;
+    left:50vw;
+  width: 45px;
+  aspect-ratio: 1;
+  --c: no-repeat linear-gradient(#000 0 0);
+  background:
+    var(--c) 0%   50%,
+    var(--c) 50%  50%,
+    var(--c) 100% 50%;
+  background-size: 20% 100%;
+  animation: l1 1s infinite linear;
+}
+@keyframes l1 {
+  0%  {background-size: 20% 100%,20% 100%,20% 100%}
+  33% {background-size: 20% 10% ,20% 100%,20% 100%}
+  50% {background-size: 20% 100%,20% 10% ,20% 100%}
+  66% {background-size: 20% 100%,20% 100%,20% 10% }
+  100%{background-size: 20% 100%,20% 100%,20% 100%}
+}
+#loaderback{
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+    opacity:0.5;
+}
+#back:hover{
+    cursor: pointer;
+    color:red;
+
+}
+#logout{
+    color: white;
+    background-color: red;
+    padding: 5px 10px;
+    border-radius: 40px;
+    margin-right: 10px;
+    border:none;
+}
+#logout:hover{
+    cursor: pointer;
+    background-color: red;
+}
+footer{
+    background-color: black;
+    height: auto;
+    padding-left:3%;
+    padding-bottom: 1%;
+    margin-top:5%;
+    padding-top:1%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#Cyberlabs{
+    color:white;
+    width:auto;
+    height:auto;
+}
+#cl{
+    padding:2%;
+    font-weight: bold;
+    font-size: x-large;
+    color: white;
+    
+}
+#name{
+    font-size: large;
+    padding-top:3%;
+    color: white;
+}
+#mail{
+    font-size: medium;
+    padding-bottom: 3%;
+    color: white;
+}
+#last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#Cyberlabs{
+    height:70px;
+    width:70px;
+}

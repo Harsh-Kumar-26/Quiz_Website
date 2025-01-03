@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div id="loaderback"></div>
+    <div id="loader"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login_Quizzeria</title>
+    <link href="login.css" rel="stylesheet">
+    <script src="bundle.js" defer></script>
+</head>
+<body>
+    <img id='logo' alt="Server Error">
+    <h1>Welcome Back!</h1>
+    <main id="m">
+        <p id="n1">Log in to your Quizzeria account</p><br>
+        <form class="login">
+            <a1>
+            <label for="mail">Email</label><br>
+            <input type="email" id="mail1" name="mail"><br>
+            <p id="ee1"></p>
+            </a1>
+            <a1>
+            <label for="Password">Password</label><br>
+            <input type="password" id="mail_passowrd1" name="Password">
+            <p id="ep1"></p>
+            </a1>
+            <button type="submit" id="but2">Log in</button>
+        </form>
+    </main>
+    <h2>New to Quizzeria?</h2>
+    <button id="but1">Sign up Now</button>
+   
+</body>
+<script>
+    document.getElementById("but1").addEventListener("click",()=>{
+        window.location.href="signup.html";
+    })
+</script>
+</html>

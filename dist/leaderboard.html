@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <div id="loaderback"></div>
+  <div id="loader"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeaderBoard</title>
+    <link href="leaderboard.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <img id="logo" alt="Server Error">
+        <buttons>
+            <button id="back">Back</button>
+        </buttons>
+    </nav>
+    <main id="m2">
+       <div id="main">LeaderBoard</div>
+       <div id="tab">
+       <table>
+          <tr>
+            <th>Rank</th>
+            <th>Name</th>
+            <th>Marks</th>
+          </tr>
+        <tbody id="leaderboard">
+        </tbody>
+      </table>
+    </div>
+    </main>
+    <footer>
+        <img id="Cyberlabs" alt="Server Error">
+        <span id="cl">CyberLabs</span>
+        <h2 id="name">Harsh Kumar</h2>
+        <h4 id="mail">harshkumar010377@gmail.com</h4>
+        <n id="last">
+        <p>@All Rights Reserved</p>
+    </n>
+    </footer>
+    <script src="bundle.js"></script>
+</body>
+<script>
+document.getElementById("back").addEventListener("click",()=>{
+window.history.back();
+}); </script>
+</html>
