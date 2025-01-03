@@ -81,7 +81,7 @@ if (window.location.pathname.includes("login.html")) {
         .then(cred => {
           console.log("No Error");
           document.querySelector("#ep1").style.color = "blue";
-          document.querySelector("#ep1").innerHTML = "User Created";
+          document.querySelector("#ep1").innerHTML = "User Logined";
           window.location.href = "user_main.html";
           loginmail.reset()
         })
